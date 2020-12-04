@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My flask project!</title>
+</head>
+<body>
+	<h1>Hi {{name}}</h1>
+	<p>I think your age must be {{age}}!</p>
+	<p>
+		Your friend are:
+		<ul>
+			{% for name in names %}
+				<li> {{name}} </li>
+			{% endfor %}
+		</ul>
+
+		{% if name=="Vipul" %}
+			<p> Welcome, Sir! </p>
+		{% else %}
+			<p> Sorry, you are not allowed!</p>
+		{% endif %}
+	</p>
+</body>
+</html>

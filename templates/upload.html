@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My flask project!</title>
+</head>
+<body>
+	<form action="/upload" method="POST" enctype="multipart/form-data">
+		<br><label> Enter name: </label>
+		<input type="text" name="name">
+		<br><label> Enter age: </label>
+		<input type="text" name="age">
+		<br><label> Enter branch: </label>
+		<input type="text" name="branch">
+ 
+ 			
+ 		<br><label> Submit photo: </label>
+ 		<input type="file" name="image">
+ 		<br>
+ 		<br>
+ 		<br><button type="submit">SUBMIT</button>
+	</form>
+</body>
+</html>
+
+
+<h1> Some Important Info </h1>
+GET data -> request.args<br>
+POST data -> request.form<br>
+FILE data -> request.files<br>
+
+Deploy
+Flask_login
+Mongo
+
